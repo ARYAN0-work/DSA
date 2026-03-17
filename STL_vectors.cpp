@@ -23,7 +23,7 @@ void explainVector(){
     vector<int> v(5);// it is like this {0,0,0,0,0} =>even after this you can add something and push back 
 
     vector<int>v1(5,20); // {20,20,20,20,20}
-    vector<int> v2(v1); // v2 will be a similar container but a copy of v1 {20,20,20,20,20}
+    vector<int> v2(v1); // v2 will be a similar container but a copy of v1 {20,20,20,20,20}=> it is dynamic in nature
 }
 
 // => CONFUSION IN LINE 19
