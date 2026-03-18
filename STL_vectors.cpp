@@ -174,3 +174,27 @@ void explainStack(){
     st1.swap(size); // swap those 2 stacks 
     
 }
+
+
+//Similarr to Stack => and it is equal to FIFO[first in fitst out ]
+
+void explainQueue(){// box filled like this |_____
+    queue<int> q ;
+    q.push(1); // {1}
+    q.push(2); // {1,2}
+    q.emplace(4); // {1,2,4
+    
+    q.back() += 5; // back will mean 4 only 
+
+    cout << q.back(); // prints 9
+    
+    // Q is {1,2,9} => manipulate the last no.
+
+    cout << q.front(); //prints 1 => this prints doesnt delete
+
+    q.pop(); // {2,9}
+
+    cout << q.front();// prints 2
+
+    //size swap entry same as stack
+}
