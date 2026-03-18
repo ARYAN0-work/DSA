@@ -192,7 +192,7 @@ void explainQueue(){// box filled like this |_____
 
     cout << q.front(); //prints 1 => this prints doesnt delete
 
-    q.pop(); // {2,9}
+    q.pop(); // {2,9} // deletes the 1st no
 
     cout << q.front();// prints 2
 
