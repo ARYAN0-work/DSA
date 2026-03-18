@@ -109,3 +109,26 @@ v.clear(); // erases the entire vector => prints it down to emoty a vector
 cout << v.empty(); // acts like a boolean it prints true(if vectir is emoty) and false(if vector is false)
 
 }
+
+// DAY 3
+
+//list is similar to vectors but it gives front operations
+//list dynamic in nature
+
+// in vectors we use insert whuch is damn too costlier => take time
+// list is internal operations which is doubly lingilist like a doublylinkedlist is maintned for a list & for vector a single linkedlist is maintned
+
+// in comparision to time complexity list is very cheap
+void explainList(){
+    list<int> ls;
+
+    ls.push_back(2); // {2}
+    ls.emplace_back(4); // {2,4}
+    ls.push_front(5); // {5,2,4}
+
+    ls.emplace_front(); {2,4};
+
+    // rest functions same as vector
+    // begin, end, rbegin, rend, clear, insert, size, swap => all similar
+}
+
