@@ -150,3 +150,27 @@ void explainDegue(){
     //begin, end, rbegin, rend, clear, insert, size, swap 
 }
 
+//=> stack ; LIFO = last in first out ; the guy who come first go out last
+// indexing access is not allowed   
+// in stack there is only three fn => push, pop, top => all the operation are bigoh of 1
+
+void explainStack(){
+    stack<int> st;
+    st.push(1); //{1}
+    st.push(2); //{2,1} // box filled like this ______|
+    st.push(3); //{3,2,1}
+    st.push(3); //{3,3,2,1}
+    st.emplace(5); // {5,3,3,2,1}
+    
+    cout<< st.top(); // prints 5 "** st(2) is invalid **" // it gives 5 but 5 is still in stack
+
+    st.pop();// st looks like {3,3,2,1} // it gives 5 but delete it in stack
+
+    cout << st.top(); //3 // now if i do this it will give 3 bcz 5 is deleted
+    cout << st.size(); //4 // it will give no. of elements in stack
+    cout << st.empty(); // it will tell us its falls no the stack isnt empty
+
+    stack<int>st1,st2; // declare 2 stackes 
+    st1.swap(size); // swap those 2 stacks 
+    
+}
