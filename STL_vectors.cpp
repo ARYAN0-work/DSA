@@ -198,3 +198,42 @@ void explainQueue(){// box filled like this |_____
 
     //size swap entry same as stack
 }
+
+// PRIORTY[max heap] => THE GUY WHO HAS THE LARGEST VALIE STAYS AT THE TOP => DATA IS NOT STORED IN LINEAR WAY
+
+// most of the time push top pop
+
+// min priorty[min priorty] priorty ka ulta
+
+void explainPQ() {
+
+    priority_queue<int> pq;
+
+    pq.push(5);      // {5}
+    pq.push(2);      // {5, 2}           |10 |
+    pq.push(8);      // {8, 5, 2}        |8  |
+    pq.emplace(10);  // {10, 8, 5, 2}    |5  |
+
+    cout << pq.top(); // prints 10
+
+    pq.pop();         // {8, 5, 2}
+
+    cout << pq.top(); // prints 8
+
+
+    // size, swap, empty function same as others
+
+
+    // Minimum Heap
+    priority_queue<int, vector<int>, greater<int>> pq;
+
+    pq.push(5);      // {5}
+    pq.push(2);      // {2, 5}
+    pq.push(8);      // {2, 5, 8}
+    pq.emplace(10);  // {2, 5, 8, 10}
+
+    cout << pq.top(); // prints 2
+}
+
+// TIME COMPLEXITY OF PUSH AND POP = LOG(N) & TOP BIGOH(1)
+
