@@ -20,3 +20,12 @@ int main(){// main fn
     return 0;
 }
 
+
+
+/*
+=> yhe whole stl 
+= algo
+= containers
+= iterators
+= functions
+*/
