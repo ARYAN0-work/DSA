@@ -52,7 +52,7 @@ int main() {
 using namespace std;
 
 void countDigit(int n){
-    int cnt = (int)(log10(n));
+    int cnt = (int)(log10(n)) +1;
 }
 
 int main() {
