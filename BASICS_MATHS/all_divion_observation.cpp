@@ -229,19 +229,26 @@ using namespace std;
 void division(int n){
 
     int limit = sqrt(n);
-    vector<int> ls;
+    vector<int> ls; // we need a list lets take a list so lets take a list
 
+    //6*6 <= 36
+    //7*7 <= 36 FALSE
+    //O(sqrt(n))
     for(int i; i <=limit ; i++){
         if (n %i==0)// single = lagay tha mistake
         {
-            ls.push_back(i);
+            ls.push_back(i); // pushing back i
             if (n/i != 1){
             ls.push_back(n/i);
         }
       } 
     }
+    // whatever the no. of factor is sorting it it take internal sorting fn which takes nlogn
+    ////O(nlogn) : n is the no. of factors
+    //O(no.of factors*log(no. of factors)) : n is the no. of factors
     sort(ls.begin(), ls.end());
-    for (auto it : ls) cout << it << " ";
+    //O(no. of factors)
+    for (auto it : ls) cout << it << " "; // syntax to print list
     
 }
 
@@ -250,3 +257,7 @@ int main(){
     cin >> n;
     division(n);
 }
+
+// TC => I< SQRT(N) INSTEAD OF THIS SQUARE ROOT IS A FN AND EVERY TIME FN IS CALLED BCZ SQR ROOT IS A MATHEMATICAL FN IN C++ STL THIS WILL BE CALLED EVERY TIME WHICH WILL TAKE TIME ITSLEF => I*I<= N
+
+// net ans => big o of this + big o of this + big o of this
