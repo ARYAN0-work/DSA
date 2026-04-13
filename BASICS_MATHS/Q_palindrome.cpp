@@ -11,7 +11,7 @@ A palindrome number is a number for which the reverse is exactly the same as the
 Example:
 121 → Palindrome
 */
-
+/*
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -38,5 +38,38 @@ int palindrome(int n){
 int main(){
     int n;
     cin>> n;
-    palindrome(n);
+    palindrome(n);}
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void digit(int n){
+   int count =0;
+   int dup =n;
+   while (n>0)
+   {
+    int remainder=n%10;
+     count =(count*10)+remainder;
+     n=n/10;
+     //count++; update nhi karni
+   }
+   
+   if (dup==count)
+   {
+     cout<< "yes";
+   }
+   else
+   {
+    cout<<"no";
+   }
+     
+   
+
+}
+
+int main(){
+  int n;
+  cin>> n;
+  digit(n);
 }

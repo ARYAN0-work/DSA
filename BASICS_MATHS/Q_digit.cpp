@@ -63,24 +63,52 @@ int main() {
 
 */
 
+//#include<bits/stdc++.h>
+//using namespace std;
+//
+//void countDigit(int n){
+//    int cnt =0;
+//    while (n>0)
+//    {
+//        int lastDigit =n %10;
+//        cnt = cnt + 1;
+//        n= n/10;
+//    }
+//    //  return cnt;     mistake void hai return nhi karega change to int countDigit or do this =>
+//
+//    cout<< cnt;
+//}
+//
+//int main() {
+//    int n;
+//    cin>> n;
+//    countDigit(n);
+//}
+
 #include<bits/stdc++.h>
 using namespace std;
 
-void countDigit(int n){
-    int cnt =0;
-    while (n>0)
-    {
-        int lastDigit =n %10;
-        cnt = cnt + 1;
-        n= n/10;
-    }
-    //  return cnt;     mistake void hai return nhi karega change to int countDigit or do this =>
+void digit(int n){
+      int count=0;
+      while (n>0)// not using while loop using if else statment on that place
+      {
+      //  n=n/10; ye 3rd line pe rahega
+      //  int rem=n%10;
+      //  count=count+1;
 
-    cout<< cnt;
+          int lastDigit =n %10;
+          count = count + 1;// can use count ++
+          n= n/10;
+      }
+      
+      
+      cout<<count;
+  
 }
 
-int main() {
+int main(){
     int n;
-    cin>> n;
-    countDigit(n);
+    cin>>n;
+    digit(n);
 }
+

@@ -12,7 +12,7 @@ PSEUDO CODE =>
   sum =0
   while(N>0){    
    last digit =N % 10  | 7789%10 | 778 % 10
-   su, = sum + (dup*dup*dup)
+   sum = sum + (dup*dup*dup)
    N =N/10      | 7789/10=778 | 778 /10
 
    
@@ -23,7 +23,7 @@ PSEUDO CODE =>
   }
 
 */
-
+/*
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -52,4 +52,38 @@ int main(){
     int n;
     cin>> n;
     armstrong(n);
+}
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+void digit(int n){
+   int count =0;
+   int dup =n;
+   while (n>0)
+   {
+    int i=n%10;
+     count =(count)+(i*i*i);
+     n=n/10;
+     //count++; update nhi karni
+   }
+   
+   if (dup==count)
+   {
+     cout<< "yes";
+   }
+   else
+   {
+    cout<<"no";
+   }
+     
+   
+
+}
+
+int main(){
+  int n;
+  cin>> n;
+  digit(n);
 }
