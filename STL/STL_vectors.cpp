@@ -16,14 +16,14 @@ void explainVector(){
     vector<pair<int, int>>vec;// declaring a pair of vector 
 
     vec.push_back({1,2});// you have to use it like this {1,2}
-    v.emplace_back(1,2);// you can use it like (1,2) this also  
+    vec.emplace_back(1,2);// you can use it like (1,2) this also  
 
-    vector<int>v(5,100); // it is like this {100,100,100,100,100}
+    vector<int>v1(5,100); // it is like this {100,100,100,100,100}
 
-    vector<int> v(5);// it is like this {0,0,0,0,0} =>even after this you can add something and push back 
+    vector<int> v2(5);// it is like this {0,0,0,0,0} =>even after this you can add something and push back 
 
-    vector<int>v1(5,20); // {20,20,20,20,20}
-    vector<int> v2(v1); // v2 will be a similar container but a copy of v1 {20,20,20,20,20}=> it is dynamic in nature
+    vector<int>v3(5,20); // {20,20,20,20,20}
+    vector<int> v4(v1); // v2 will be a similar container but a copy of v1 {20,20,20,20,20}=> it is dynamic in nature
 }
 
 // => CONFUSION IN LINE 19
