@@ -38,3 +38,5 @@ vector<int> getSecondOrderElements(int n,vector<int>a){
     int ssmalest= secondSmalest(a,n);
     return {slargest,ssmalest};
 }
+
+// need revsion
