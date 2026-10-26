@@ -1,0 +1,1 @@
+// When a string problem depends on neighboring characters, inspect i and i+1.
